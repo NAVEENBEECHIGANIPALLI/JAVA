@@ -1,0 +1,33 @@
+public class VowelWordFrequency {
+	public static void main(String[] args) {
+		String s = "naveen beechiganipalli";
+		 int vowel=0;
+		 int count = 1;
+		 int[] freq = new int[s.length()]; 
+	     char s1[] = s.toCharArray(); 
+		for (int i = 0; i < s.length(); i++){    // no of vowels
+			if(s.charAt(i)=='a' || s.charAt(i)=='e' || s.charAt(i)=='i' ||  
+                                       s.charAt(i)=='o' || s.charAt(i)=='u') 
+                        vowel++; }
+        for (int i = 0; i < s.length() - 1; i++) { // no of words
+        
+            if ((s.charAt(i) == ' ') && (s.charAt(i + 1) != ' ')){
+                count++;} }
+     for(int i = 0; i <s.length(); i++) {   // Character frequencies
+            freq[i] = 1;  
+            for(int j = i+1; j <s.length(); j++) {  
+                if(s1[i] == s1[j])
+                {  
+                    freq[i]++;  
+                    s1[j] = '0';  
+                }}}
+        System.out.println("Characters  frequencies");  
+            for(int i = 0; i <freq.length; i++) 
+            {  
+                if(s1[i] != ' ' && s1[i] != '0')  	
+              System.out.println(s1[i] + "              " + freq[i]);  
+            }  
+        System.out.println("No of Vowels: " + vowel);
+        System.out.println("Number of words in a string : " + count);
+       
+    }}
