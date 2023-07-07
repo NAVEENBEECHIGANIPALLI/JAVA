@@ -1,0 +1,34 @@
+public class LongestIncreasingSubarray {
+   public static void printLongestIncSubArr(int arr[], int n)
+    {
+        int max = 1, len = 1, maxIndex = 0;
+        for (int i = 1; i < n; i++)
+        {
+            
+            if (arr[i] > arr[i-1])
+                len++;
+            else
+            {
+               if (max < len)   
+                {
+                    max = len;
+                    maxIndex = i - max;
+                }
+                len = 1;   
+            }   
+        }
+     if (max < len)
+        {
+            max = len;
+            maxIndex = n - max;
+        }
+     for (int i = maxIndex; i < max+maxIndex; i++)
+            System.out.print(arr[i] + " ");
+    }
+    public static void main(String[] args)
+    {
+        int arr[] = {1,9,3,4,7,2,6,8,10,12};
+        int n = arr.length;
+        printLongestIncSubArr( arr, n);
+    }
+}
