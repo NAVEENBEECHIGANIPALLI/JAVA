@@ -1,0 +1,21 @@
+class Naveen {
+	   public void displayInfo() {
+	      System.out.println("My Name is Naveen.");
+	   }
+	}
+
+	class Kumar extends Naveen {         
+		@Override
+	   public void displayInfo() {
+	      System.out.println("My Name is Naveen Beechiganipalli.");
+	   }
+	}
+
+	public class MethodOverriding {
+	   public static void main(String[] args) 
+	   {
+	     Kumar k = new Kumar();
+	      k.displayInfo();
+	   }
+	}
+ 
