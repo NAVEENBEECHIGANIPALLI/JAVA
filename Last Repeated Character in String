@@ -1,0 +1,26 @@
+public class LastRepeating {
+
+		public static void main(String[] args)
+		{
+			String str = "NBAVVAX";
+			System.out.println("Last Repeated Character in String is :" );
+			for (int i = str.length()-1; i >= 0; i--)
+			{
+				boolean u = true;
+				for (int j = str.length()-2; j >= 0; j--)
+				{
+					if ( str.charAt(i) == str.charAt(j))
+					{  
+					   u=false;
+						break;
+						
+					}
+				}
+				if (!u)
+				{
+					System.out.println(str.charAt(i));
+					break;
+				}
+			}
+		}		
+}
