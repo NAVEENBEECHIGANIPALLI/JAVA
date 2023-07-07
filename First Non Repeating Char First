@@ -1,0 +1,14 @@
+public class FirstNonRepeatingCharFirst {
+
+	    public static void main(String args[])
+	    {
+	        String Str ="NAVEEN";
+	        for(char i :Str.toCharArray())
+	        {
+	        if ( Str.indexOf(i) == Str.lastIndexOf(i)) {
+	            System.out.println("First non-repeating character is: "+i);
+	            break;
+	        }
+	        }
+	    }
+	}
