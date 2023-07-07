@@ -1,0 +1,13 @@
+class Bikefinal
+{  
+ final int speedlimit=90;
+ void run()
+{  
+  speedlimit=400;                // final keyword used compile time error
+ }  
+ public static void main(String args[ ])
+{  
+ Bikefinal obj=new  Bikefinal();  
+ obj.run();  
+ }  
+}
