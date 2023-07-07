@@ -1,0 +1,32 @@
+public class Swapwithout {
+
+    public static void main(String args[]) 
+    {  
+        String a = "NAVEEN";  
+        String b = "BEECHIGANIPALLI";  
+        System.out.println("Before swap a : " + a );
+        System.out.println("Before swap b : " + b);
+        String store=a;
+        a =  b;  
+        b = store;    
+        System.out.println("After a : " + a );
+        System.out.println("After b : " + b);
+    }  
+}  
+
+/* 
+ public class Swapwithout {
+
+    public static void main(String args[]) 
+    {  
+        String a = "NAVEEN";  
+        String b = "B";  
+        System.out.println("Before swap: " + a + " " + b);  
+        a = a + b;  
+        b = a.substring(0, a.length() - b.length());  
+        a = a.substring(b.length());  
+        System.out.println("After : " + a + " " + b);  
+    }  
+} 
+
+ */
