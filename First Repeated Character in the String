@@ -1,0 +1,25 @@
+import java.util.*; 
+public class FindRepeatingChar { 
+    static char findRepeat(char temp[]) { 
+               ArrayList<Character> list = new ArrayList<>(); 
+                   for (int i=0; i<=temp.length-1; i++) 
+        { 
+            char ch = temp[i]; 
+             if (list.contains(ch)) 
+                return ch; 
+            else 
+                list.add(ch); 
+        } 
+          return 'F'; 
+    } 
+  
+    public static void main (String[] args) { 
+        
+        String str = "NAVEEN"; 
+         char[] charr = str.toCharArray();
+             if (findRepeat(charr)=='F')
+             System.out.println("NO REPETITION");
+          else
+        System.out.println("The First Repeated Character in the String is: "+findRepeat(charr)); 
+    } 
+}
