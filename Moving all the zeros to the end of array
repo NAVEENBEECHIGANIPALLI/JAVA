@@ -1,0 +1,19 @@
+import java.util.*;
+public class moveZerostoEnd 
+{
+	   public static void main(String[] args)
+	   {
+	        int array[] = {8, 0, 0, 7, 5, 0, 9, 6, 0,0};
+	         int n = array.length;
+	         func(array, n);
+	      }
+	      public static void func(int array[], int n) 
+	   {
+	          Arrays.sort(array);
+	         System.out.println(" Moving all the zeros to the end of array: ");
+	         for (int i = n-1; i >= 0; i--) 
+	   {
+	            System.out.print(array[i] + " ");
+	         }
+	      }
+	   }
