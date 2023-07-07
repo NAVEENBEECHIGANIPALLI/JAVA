@@ -1,0 +1,20 @@
+import java.util.LinkedList;
+public class Linkedlist {
+ public static void main(String[] args)
+ {
+     LinkedList<String> lList = new LinkedList<>();
+       lList.add("Naveen");
+       lList.add("Kumar");
+       lList.add("Beechigaipalli");
+      iterateUsingEnhancedForLoop(lList);
+ }
+public static void iterateUsingEnhancedForLoop(LinkedList<String> lList)
+ {
+     System.out.print("LinkedList using for loop : ");
+     for (String listElement : lList) 
+     {
+    	
+    	 System.out.print(listElement + " ");
+     }
+  }
+}
